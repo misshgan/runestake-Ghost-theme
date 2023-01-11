@@ -1,0 +1,53 @@
+.home-hero-container {
+	position: relative;
+	height: 310px;
+
+	.hom-hero__banner-img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	.home-hero {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		z-index: 10;
+		align-items: center;
+		justify-content: center;
+
+		&__logo {
+			width: 20rem;
+			margin-bottom: 2rem;
+		}
+		&__title {
+			font-size: 2.4rem;
+			text-align: center;
+			max-width: 70rem;
+			color: #fff;
+			// text-transform: uppercase;
+		}
+	}
+}
+
+
+/* BODY */
+
+.home-body-container {
+
+
+	.home-body {
+		
+	}
+
+	.home-featured {
+		padding: 5rem 0;
+	}
+	
+}
+
