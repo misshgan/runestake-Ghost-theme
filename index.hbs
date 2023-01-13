@@ -16,5 +16,15 @@
 				{{/foreach}}
 			{{/get}}
 		</div>
+		<div class="home-posts post-feed">
+			{{#foreach posts}}
+				{{> card}}
+			{{/foreach}}
+			
+		</div>
+		<div class="pagination">
+			{{pagination}}
+		</div>
 	</div>
 </div>
+

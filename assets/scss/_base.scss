@@ -116,11 +116,11 @@ $default-font: 'Quantico', sans-serif;
 /* COLORS */
 
 $bg-color: #172030;
-$accent-color: #0CA4C4;
-$text-color: #78828A;
+$accent-color: #52cbe4;
+$text-color: #9ea8b0;
 
 body {
-	background: $bg-color;
+	background: linear-gradient(to right, #141e30, #192c42);;
 }
 
 /* CLASSES */
@@ -128,4 +128,8 @@ body {
 .w-1200 {
 	max-width: 1200px;
 	margin: 0 auto;
+}
+
+#ghost-portal-root {
+	display: none;
 }

@@ -1,14 +1,12 @@
 {{!< default}}
 
-<div class="gh-page">
-    <div class="gh-container">
+<div class="tag-page w-1200">
+   {{#tag}}
+        <header class="tag-page__header">
 
-        {{#tag}}
-        <header class="gh-page-head">
+            <h1 class="tag-page__title">{{name}}</h1>
 
-            <h1>{{name}}</h1>
-
-            <p>
+            <p class="tag-page__subtitle">
                 {{#if description}}
                     {{description}}
                 {{else}}
@@ -16,20 +14,14 @@
                 {{/if}}
             </p>
 
-            {{#if feature_image}}
-                <img class="gh-page-image" src="{{feature_image}}" alt="{{name}}" />
-            {{/if}}
-
         </header>
         {{/tag}}
 
-        <div class="gh-postfeed">
+        <div class="tag-page__body">
         {{#foreach posts}}
 
-            {{> "card"}} {{!-- partials/card.hbs --}}
+            {{> card}}
 
         {{/foreach}}
         </div>
-
-    </div>
 </div>

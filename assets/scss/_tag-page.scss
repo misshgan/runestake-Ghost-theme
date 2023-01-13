@@ -1,0 +1,25 @@
+.tag-page {
+
+	&__header {
+		padding: 5rem 0 10rem;
+	}
+	&__title {
+		color: $accent-color;
+		width: max-content;
+		margin: 0 auto;
+		margin-bottom: 2rem;
+		font-size: 5.5rem;
+	}
+	&__subtitle {
+		width: max-content;
+		margin: 0 auto;
+		color: $accent-color;
+		font-size: 1.8rem;
+	}
+	&__body {
+		display: flex;
+		gap: 3rem;
+		flex-wrap: wrap;
+		padding-bottom: 7rem;
+	}
+}

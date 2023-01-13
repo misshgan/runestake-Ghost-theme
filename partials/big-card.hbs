@@ -2,14 +2,14 @@
 <article class="b-card">
 	<div class="b-card__left">
 		{{#if feature_image}}
-			<img src="{{feature_image}}" alt="post image" class="b-card__img">
+			<a href="{{url}}"><img src="{{feature_image}}" alt="post image" class="b-card__img"></a>
 		{{else}}
-			<img src="{{asset "assets/images/post-img-placeholder.jpg"}}" alt="post image" class="b-card__img">
+			<a href="{{url}}"><img src="{{asset "assets/images/post-img-placeholder.jpg"}}" alt="post image" class="b-card__img"></a>
 		{{/if}}
 	</div>
 	<div class="b-card__right">
 		<div class="b-card__tags">{{tags}}</div>
-		<h2 class="b-card__title">{{title}}</h2>
+		<a href="{{url}}"><h2 class="b-card__title">{{title}}</h2></a>
 		<div class="b-card__content">{{content}}</div>
 		<div class="b-card__footer">
 			{{#foreach authors}}

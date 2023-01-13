@@ -46,7 +46,17 @@
 	}
 
 	.home-featured {
-		padding: 5rem 0;
+		padding: 3rem 0;
+	}
+
+	.home-posts {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 3rem;
+	}
+
+	.pagination {
+		display: none;
 	}
 	
 }
