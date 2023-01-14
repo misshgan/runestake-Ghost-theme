@@ -20,18 +20,29 @@
 </head>
 <body class="{{body_class}}">
 
-<div class="header-container">
+<div class="header-container safe-margin">
 	<header class="header w-1200">
 		<nav class="header__nav">
 			<a href="{{@site.url}}" class="header__nav-link">Home</a>
-			<a href="https://runestake.com/r/blog1" class="header__nav-link">Go to Runestake.com</a>
+			<a target="_blank" href="https://runestake.com/r/blog1" class="header__nav-link">Go to Runestake.com</a>
 		</nav>
 		<div class="header__share">
-			<a href="https://twitter.com/Runestakecom" class="header__share-link"><img src={{asset "assets/images/twitter-icon.svg"}} alt="twitter icon"></a>
-			<a href="http://runestakediscord.com/" class="header__share-link"><img src={{asset "assets/images/discord-icon.svg"}} alt="discord icon"></a>
-			<a href="https://www.tiktok.com/@osrsboater" class="header__share-link"><img src={{asset "assets/images/tiktok-icon.svg"}} alt="tiktok icon"></a>
-			<a href="https://www.youtube.com/@runestake7641/shorts" class="header__share-link"><img src={{asset "assets/images/youtube-icon.svg"}} alt="youtube icon"></a>
-			<a href="https://www.instagram.com/runestake" class="header__share-link"><img src={{asset "assets/images/instagram-icon.svg"}} alt="instagram icon"></a>
+			<a target="_blank" href="https://twitter.com/Runestakecom" class="header__share-link"><img src={{asset "assets/images/twitter-icon.svg"}} alt="twitter icon"></a>
+			<a target="_blank" href="http://runestakediscord.com/" class="header__share-link"><img src={{asset "assets/images/discord-icon.svg"}} alt="discord icon"></a>
+			<a target="_blank" href="https://www.tiktok.com/@osrsboater" class="header__share-link"><img src={{asset "assets/images/tiktok-icon.svg"}} alt="tiktok icon"></a>
+			<a target="_blank" href="https://www.youtube.com/@runestake7641/shorts" class="header__share-link"><img src={{asset "assets/images/youtube-icon.svg"}} alt="youtube icon"></a>
+			<a target="_blank" href="https://www.instagram.com/runestake" class="header__share-link"><img src={{asset "assets/images/instagram-icon.svg"}} alt="instagram icon"></a>
+		</div>
+		<div class="dropdown">
+			<img src="{{asset "assets/images/dropdown-close-icon.svg"}}" alt="close icon" class="dropdown__close dropdown__target">
+			<h3 class="dropdown__title dropdown__target">Social links</h3>
+			<div class="dropdown__body">
+				<a target="_blank" href="https://twitter.com/Runestakecom" class="dropdown__link"><img src={{asset "assets/images/twitter-icon.svg"}} alt="twitter icon"></a>
+				<a target="_blank" href="http://runestakediscord.com/" class="dropdown__link"><img src={{asset "assets/images/discord-icon.svg"}} alt="discord icon"></a>
+				<a target="_blank" href="https://www.tiktok.com/@osrsboater" class="dropdown__link"><img src={{asset "assets/images/tiktok-icon.svg"}} alt="tiktok icon"></a>
+				<a target="_blank" href="https://www.youtube.com/@runestake7641/shorts" class="dropdown__link"><img src={{asset "assets/images/youtube-icon.svg"}} alt="youtube icon"></a>
+				<a target="_blank" href="https://www.instagram.com/runestake" class="dropdown__link"><img src={{asset "assets/images/instagram-icon.svg"}} alt="instagram icon"></a>
+			</div>
 		</div>
 	</header>
 </div>
@@ -43,17 +54,17 @@
 
 </main>
 
-<div class="footer-container">
+<div class="footer-container safe-margin">
 	<footer class="footer w-1200">
 		<img src={{asset "assets/images/hero-logo-image.svg"}} alt="logo image" class="footer__logo">
-		<div class="footer__copy">©2020-2022 Runestake. All Rights Reserved.</div>
 		<div class="header__share">
-			<a href="https://twitter.com/Runestakecom" class="header__share-link"><img src={{asset "assets/images/twitter-icon.svg"}} alt="twitter icon"></a>
-			<a href="http://runestakediscord.com/" class="header__share-link"><img src={{asset "assets/images/discord-icon.svg"}} alt="discord icon"></a>
-			<a href="https://www.tiktok.com/@osrsboater" class="header__share-link"><img src={{asset "assets/images/tiktok-icon.svg"}} alt="tiktok icon"></a>
-			<a href="https://www.youtube.com/@runestake7641/shorts" class="header__share-link"><img src={{asset "assets/images/youtube-icon.svg"}} alt="youtube icon"></a>
-			<a href="https://www.instagram.com/runestake" class="header__share-link"><img src={{asset "assets/images/instagram-icon.svg"}} alt="instagram icon"></a>
+			<a target="_blank" href="https://twitter.com/Runestakecom" class="header__share-link"><img src={{asset "assets/images/twitter-icon.svg"}} alt="twitter icon"></a>
+			<a target="_blank" href="http://runestakediscord.com/" class="header__share-link"><img src={{asset "assets/images/discord-icon.svg"}} alt="discord icon"></a>
+			<a target="_blank" href="https://www.tiktok.com/@osrsboater" class="header__share-link"><img src={{asset "assets/images/tiktok-icon.svg"}} alt="tiktok icon"></a>
+			<a target="_blank" href="https://www.youtube.com/@runestake7641/shorts" class="header__share-link"><img src={{asset "assets/images/youtube-icon.svg"}} alt="youtube icon"></a>
+			<a target="_blank" href="https://www.instagram.com/runestake" class="header__share-link"><img src={{asset "assets/images/instagram-icon.svg"}} alt="instagram icon"></a>
 		</div>
+		<div class="footer__copy">©2020-2022 Runestake. All Rights Reserved.</div>
 	</footer>
 </div>
 
@@ -62,6 +73,7 @@
 {{!-- <foot> --}}
 
 <script src="{{asset "built/jquery-3.4.1.min.js"}}"></script>
+<script src="{{asset "built/custom-script.js"}}"></script>
 
 {{#if pagination.pages}}
 <script>

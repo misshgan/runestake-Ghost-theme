@@ -16,6 +16,10 @@
 			position: relative;
 			transition: all .3s;
 
+			@media (max-width:400px) {
+				margin-right: 1.2rem;
+			}
+
 			&::after {
 				content: '';
 				position: absolute;
@@ -44,6 +48,86 @@
 	display: flex;
 	align-items: center;
 	column-gap: 1rem;
+
+	@media (max-width:600px) {
+		display: none;
+	}
+}
+
+.dropdown {
+	display: none;
+
+	@media (max-width:600px) {
+		display: block;
+	}
+
+	&__close {
+		width: 4.41rem;
+		height: 4.41rem;
+
+		padding: 1rem;
+		border: 1px solid $accent-color;
+		border-radius: 10px;
+		display: none;
+	}
+
+	&__title {
+		color: $accent-color;
+		font-size: 1.8rem;
+		line-height: 1.2;
+		padding: 1.1rem 1.5rem;
+		border: 1px solid $accent-color;
+		border-radius: 10px;
+
+		@media (max-width:400px) {
+			font-size: 1.6rem;
+			padding: 1.1rem 1.2rem;
+		}
+	}
+
+	&.active > &__title {
+		display: none;
+	}
+	&.active > &__close {
+		display: block;
+	}
+	&.active > &__body {
+		right: 1.5rem;
+	}
+
+	&__body {
+		display: flex;
+		align-items: center;
+		column-gap: 1rem;
+		position: fixed;
+		top: 8rem;
+		right: -110%;
+		width: max-content;
+		z-index: 100;
+		padding: 1rem;
+		background: linear-gradient(to right, #141e30, #192c42);;
+		border: 1px solid $accent-color;
+		border-radius: 10rem;
+		transition: all .3s ease-out;
+	}
+
+	&__link {
+		border-radius: 50%;
+		border: 1px solid transparent;
+		background: #253044;
+		padding: 1rem;
+		transition: all .3s;
+
+		img {
+			height: 2rem;
+			width: 2rem;
+		}
+
+		&:hover {
+			border-color: $accent-color
+		}
+	}
+
 }
 .header__share-link {
 	border-radius: 50%;

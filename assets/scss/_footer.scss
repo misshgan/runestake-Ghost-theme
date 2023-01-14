@@ -1,15 +1,22 @@
 .footer-container {
 }
 .footer {
-	padding: 5rem 0 5rem;
+	padding: 5rem 0 3rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 
 	.footer__logo {
+		@media (max-width:600px) {
+			margin: 0 auto;
+		}
 	}
 	.footer__copy {
+		margin-top: 2rem;
 		font-size: 1.4rem;
 		color: $text-color;
+		width: 100%;
+		text-align: center;
 	}
 }

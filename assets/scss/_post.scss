@@ -88,6 +88,14 @@
 		img {
 			margin: 2.4rem 0;
 		}
+
+		a {
+			word-break: break-all;
+		}
+
+		strong {
+			color: $accent-color;
+		}
 	}
 
 	.post-footer {
@@ -102,7 +110,24 @@
 
 		&__cards {
 			display: flex;
-			column-gap: 3rem;
+			justify-content: space-between;
+
+			@media (max-width:600px) {
+				flex-wrap: wrap;
+			}
+		}
+
+		.card {
+			@media (max-width:900px) {
+				&:last-child {
+					display: none;
+				}
+			}
+			@media (max-width:600px) {
+				&:last-child {
+					display: block;
+				}
+			}
 		}
 	}
 	

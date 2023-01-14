@@ -1,13 +1,13 @@
 {{!< default}}
 
 <div class="home-hero-container">
-	<img class="hom-hero__banner-img" src={{asset "assets/images/hero-banner-image.svg"}} alt="hero banner image">
+	<img class="hom-hero__banner-img" src={{asset "assets/images/hero-banner-image.webp"}} alt="hero banner image">
 	<div class="home-hero w-1200">
 		<img class="home-hero__logo" src={{asset "assets/images/hero-logo-image.svg"}} alt="logo image">
 		<h1 class="home-hero__title">The latest news and updates for Runestake</h1>
 	</div>
 </div>
-<div class="home-body-container">
+<div class="home-body-container safe-margin-5">
 	<div class="home-body w-1200">
 		<div class="home-featured">
 			{{#get "posts" include="tags,authors" limit="1" filter="featured:true"}}
@@ -20,7 +20,6 @@
 			{{#foreach posts}}
 				{{> card}}
 			{{/foreach}}
-			
 		</div>
 		<div class="pagination">
 			{{pagination}}
