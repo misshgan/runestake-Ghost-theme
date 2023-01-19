@@ -81,7 +81,7 @@
 			color: #bfbfbf;
 			line-height: 1.2;
 			font-size: 1.8rem;
-			margin: 1.6rem 0;
+			margin: 5rem 0;
 			letter-spacing: 0.5px;
 		}
 
@@ -89,8 +89,13 @@
 			margin: 2.4rem 0;
 		}
 
+		.kg-button-card a.kg-btn-accent {
+			color: #fff !important;
+		}
+
 		a {
 			word-break: break-all;
+			color: $accent-color !important;
 		}
 
 		strong {

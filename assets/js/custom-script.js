@@ -8,4 +8,13 @@ window.addEventListener('load', () => {
 			})
 		}
 	}
+
+	const postBody = document.querySelector('.post-body');
+	
+	if (postBody) {
+		let postLinks = postBody.getElementsByTagName('a')
+		for (let i = 0; i < postLinks.length; i++) {
+			postLinks[i].setAttribute('target', '_blank')
+		}
+	}
 })
