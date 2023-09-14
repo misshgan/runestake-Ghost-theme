@@ -565,23 +565,30 @@ body {
   max-width: 800px;
   margin: 0 auto;
 }
+.post-page-container .post-body hr {
+  width: 90%;
+  margin: 3.8rem auto;
+  background-color: #0fb5d6;
+  opacity: 1;
+  height: 3px;
+}
 .post-page-container .post-body h2 {
   color: #0fb5d6;
   font-size: 4rem;
   line-height: 1.2;
-  margin: 2.4rem 0;
+  margin: 3.2rem 0 1.8rem;
 }
 .post-page-container .post-body h3 {
   color: #0fb5d6;
   font-size: 3rem;
   line-height: 1.2;
-  margin: 1.6rem 0;
+  margin: 2.4rem 0 1.2rem;
 }
 .post-page-container .post-body p {
   color: #bfbfbf;
   line-height: 1.2;
   font-size: 1.8rem;
-  margin: 5rem 0;
+  margin: 0 0 3.8rem;
   letter-spacing: 0.5px;
 }
 .post-page-container .post-body img {
@@ -601,10 +608,55 @@ body {
   color: #bfbfbf;
   font-size: 1.8rem;
   letter-spacing: 0.5px;
+  font-style: italic;
   line-height: 1.2;
-  margin: 2rem 0;
+  margin: 2rem 0 3rem;
   opacity: 1;
   padding-left: 20px;
+}
+.post-page-container .post-body ol li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.post-page-container .post-body ul {
+  color: #bfbfbf;
+  font-size: 1.8rem;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+  margin: 2rem 0 3rem;
+  opacity: 1;
+  padding-left: 15px;
+}
+.post-page-container .post-body ul li {
+  margin-top: 0;
+}
+.post-page-container .post-body ul li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.post-page-container .post-body blockquote {
+  margin: 3rem 0;
+  color: #0fb5d6;
+  font-size: 2.4rem;
+  letter-spacing: 0.5px;
+  font-style: italic;
+  line-height: 1.2;
+  padding: 1rem 0;
+  padding-left: 20px;
+  position: relative;
+}
+.post-page-container .post-body blockquote::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background: #0fb5d6;
+}
+@media (max-width: 600px) {
+  .post-page-container .post-body blockquote {
+    font-size: 2.2rem;
+  }
 }
 .post-page-container .post-footer {
   padding: 7rem 0 5rem;
@@ -625,12 +677,15 @@ body {
   }
 }
 @media (max-width: 900px) {
-  .post-page-container .post-footer .card:last-child {
+  .post-page-container .post-footer .card:nth-child(3) {
     display: none;
   }
 }
 @media (max-width: 600px) {
-  .post-page-container .post-footer .card:last-child {
+  .post-page-container .post-footer .card:not(:last-child) {
+    margin-bottom: 3.2rem;
+  }
+  .post-page-container .post-footer .card:nth-child(3) {
     display: block;
   }
 }

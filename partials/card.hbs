@@ -13,7 +13,9 @@
 	<div class="card__content">{{content}}</div>
 	<div class="b-card__footer">
 		{{#foreach authors}}
-			<img src="{{profile_image}}" alt="author image" class="b-card__author-img">
+			{{#if profile_images}}
+				<img src="{{profile_image}}" alt="author image" class="b-card__author-img">
+			{{/if}}
 			<div class="b-card__footer-info">
 				<span class="b-card__name">{{name}}</span>
 		{{/foreach}}
