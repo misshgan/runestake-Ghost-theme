@@ -18,7 +18,8 @@
 	}
 	&__body {
 		display: flex;
-		justify-content: space-between;
+		column-gap: 2.5rem;
+		row-gap: 3rem;
 		flex-wrap: wrap;
 		padding-bottom: 7rem;
 	}

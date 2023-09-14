@@ -1,8 +1,8 @@
 {{!< default}}
 
-<div class="tag-page w-1200 safe-margin">
+<div class="tag-page w-1200">
    {{#tag}}
-        <header class="tag-page__header">
+        <header class="tag-page__header safe-margin">
 
             <h1 class="tag-page__title">{{name}}</h1>
 
@@ -17,7 +17,7 @@
         </header>
         {{/tag}}
 
-        <div class="tag-page__body">
+        <div class="tag-page__body safe-margin">
         {{#foreach posts}}
 
             {{> card}}
